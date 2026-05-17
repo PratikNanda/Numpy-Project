@@ -1,38 +1,13 @@
 import numpy as np
 
-# =====================================================
-# PART 20: VECTORIZATION VS PYTHON LOOPS
-# =====================================================
+scores=np.array([
+    [45,67,23,89],
+    [78,56,91,88],
+    [34,55,61,72]
+])
 
-import time
-
-print("\n========== VECTORIZATION ==========\n")
-
-large=np.arange(1000000)
-
-
-start=time.time()
-
-result=[]
-
-for x in large:
-
-    result.append(x+5)
-
-end=time.time()
-
-print("Python loop time:")
-
-print(end-start)
-
-
-
-start=time.time()
-
-new=large+5
-
-end=time.time()
-
-print("\nNumPy vectorized time:")
-
-print(end-start)
+print(scores[1])
+print(scores[-1])
+print(scores[:,2])
+print(scores[0:2,1:3])
+print(scores[1:,2:])

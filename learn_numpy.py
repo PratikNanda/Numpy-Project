@@ -49,10 +49,14 @@ matrix=np.array([
 ])
 
 flat=matrix.flatten()
+print(flat)
 rav=matrix.ravel()
+print(rav)
 
 flat[0]=999
+print(flat)
 rav[1]=777
+print(rav)
 
 print(matrix)
 
